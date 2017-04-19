@@ -1,0 +1,17 @@
+body {
+  background-color: #66004F;
+  height: 100vh; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.silly-message {
+  color: #7AFFCC;
+  text-align: center;
+  width: 80vw; }
+
+.quote {
+  align-items: center; }
