@@ -21,6 +21,11 @@ body {
   width: 80vw;
   height: 90vh;
   font-size: 4vw;
+
+  @media only screen 
+  and (max-device-width: 480px) {
+    font-size: 6vw;
+  }
 }
 
 .quote {
