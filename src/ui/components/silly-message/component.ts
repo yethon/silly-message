@@ -1,21 +1,21 @@
 import Component, { tracked } from '@glimmer/component';
 
-class testname extends Component {
+class quotes extends Component {
   @tracked
   message: any;
 
   constructor(options) {
     super(options);
     this.loadMessage();
-    setInterval(() => { this.loadMessage(); }, 3500);
   }
 
   async loadMessage() {
     let request = await fetch('https://ron-swanson-quotes.herokuapp.com/v2/quotes');
-    let quote = await request.json();
+    let [ quote ] = await request.json();
+    this.message = quote;
 
-    this.message=quote[0];
+    setTimeout(() => { this.loadMessage(); }, quote.length * 75 );
   }
 }
 
-export default testname;
+export default quotes;
