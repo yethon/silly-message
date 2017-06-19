@@ -1,0 +1,29 @@
+body {
+  background-color: #F6E7D1;
+  height: 100vh;
+  font-family: 'Rum Raisin', sans-serif; }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.silly-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555063;
+  text-align: center;
+  width: 80vw;
+  height: 90vh;
+  font-size: 4vw; }
+
+.quote {
+  align-items: center; }
+
+.credits {
+  height: 10vh; }
+  .credits img {
+    max-width: 1.5rem; }
